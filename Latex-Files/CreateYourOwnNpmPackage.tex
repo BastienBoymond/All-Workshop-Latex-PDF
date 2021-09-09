@@ -1,0 +1,77 @@
+\documentclass{article}
+
+
+\title{Workshop: Create a package and publish im on npm}
+\author{Bastien Boymond}
+\date{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+\definecolor{purple}{rgb}{0.58,0,0.82}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+
+\begin{document}
+    \maketitle
+    \begin{center}
+        \includegraphics[width=10cm, height=6cm]{npm.png}
+    \end{center}
+    \newpage
+    \begin{description}
+        \item [NPM] \mbox{\textbf{: Historique}} \\\\ \textbf{\href{https://www.npmjs.com/}{Npm}} est le gestionnaire de paquets officiel de Node.js. Depuis la version 0.6.3 de \textbf{\href{https://nodejs.org/en/}{Node.js}}, Npm fait partie de l'environnement et est donc automatiquement installé par défaut. Npm fonctionne avec un terminal et gère les dépendances pour une application. Il permet également d'installer des applications Node.js disponibles sur le dépôt npm.
+        \\
+        \begin{center} 
+            \rule{0.75\linewidth}{1pt}
+        \end{center}
+        \item [Dépendances] \mbox{\textbf{: Installation}} 
+\begin{lstlisting}[language=sh]
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install nodejs npm
+\end{lstlisting}
+        \begin{center} 
+            \rule{0.75\linewidth}{1pt}
+        \end{center}
+        \item [NPM] \mbox{\textbf{: Créer un compte}} \\ Allez sur le site de \textbf{\href{https://www.npmjs.com/}{Npm}}. \\ Crée un compte \\ \textbf{Allez sur votre terminal et entrer les commandes suivantes}
+\begin{lstlisting}[language=sh]
+    npm login 
+\end{lstlisting}
+        \begin{center} 
+            \rule{0.75\linewidth}{1pt}
+        \end{center}
+        \item [Code] \mbox{\textbf{: Faite votre premier package}} \\ Coder une class \textbf{calcul} avec :
+        \begin{itemize}
+            \item une addition 
+            \item une soustration 
+            \item une multiplication 
+            \item une division 
+            \item un modulo
+        \end{itemize}
+        \begin{center} 
+            \rule{0.75\linewidth}{1pt}
+        \end{center}
+        \item [NPM] \mbox{\textbf{: Publish}} \\ Maintenant faite la commande :
+\begin{lstlisting}[language=sh]
+    npm publish
+\end{lstlisting}
+        \begin{center}
+            \rule{0.75\linewidth}{1pt} \\
+            Vous avez Crée votre 1er package npm !!
+        \end{center}
+        \item [Code] \mbox{\textbf{: Pour allez plus loin}} \\ Vous pouvez esseyer de faire ça :
+        \begin{itemize}
+            \item update le package calcul !
+            \item custom votre page npm
+            \item esseyer de mettre de nouvelle dépendances dans votre package
+        \end{itemize}
+        \begin{center}
+            \rule{0.75\linewidth}{1pt} \\ Merci d'avoir participer a mon Workshop
+        \end{center}
+    \end{description}
+\end{document}
